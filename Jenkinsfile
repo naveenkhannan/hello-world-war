@@ -9,4 +9,8 @@ node {   def mvnHome
    
         //mvnHome = tool 'M3'
     }
+   stage ('Starting downstream job ') {
+    build job: 'pipeline_test'
+   }
+
 }
